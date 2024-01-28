@@ -7,7 +7,7 @@ metadata:
   name: home-assistant
   namespace: fleet-default
   labels:
-    home-assistant: enabled
+    node-red: enabled
 spec:
   branch: main
   clientSecretName: auth-hp48c
