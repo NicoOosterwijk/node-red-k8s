@@ -1,0 +1,4 @@
+defaultNamespace: node-red
+  
+kustomize:
+  dir: ""

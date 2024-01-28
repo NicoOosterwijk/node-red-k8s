@@ -1,0 +1,14 @@
+resources:
+- namespace.yaml
+- pvc.yaml
+- deploy.yaml
+- svc.yaml
+- ingress.yaml
+
+commonLabels:
+  app: node-red
+  app.kubernetes.io/name: node-red
+  app.kubernetes.io/managed-by: Helm
+commonAnnotations:
+  meta.helm.sh/release-name: node-red
+  meta.helm.sh/release-namespace: node-red

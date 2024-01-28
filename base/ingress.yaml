@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    meta.helm.sh/release-name: node-red
+    meta.helm.sh/release-namespace: node-red
+  name: node-red-ingress
+  namespace: node-red
+spec:
+  rules:
+    - host: nr.digitalinfo.local
+      http:
+        paths:
+          - backend:
+              service:
+                name: node-red-svc
+                port:
+                  number: 1880
+            path: /
+            pathType: Prefix
