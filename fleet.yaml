@@ -1,4 +1,11 @@
 defaultNamespace: node-red
-  
+
+NamespaceLabels:
+  app.kubernetes.io/managed-by: Helm
+
+NamespaceAnnotations:
+  meta.helm.sh/release-name: node-red
+  meta.helm.sh/release-namespace: node-red
+
 kustomize:
   dir: ""
