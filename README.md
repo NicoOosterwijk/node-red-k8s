@@ -4,7 +4,7 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: home-assistant
+  name: node-red
   namespace: fleet-default
   labels:
     node-red: enabled
