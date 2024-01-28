@@ -10,7 +10,6 @@ metadata:
     node-red: enabled
 spec:
   branch: main
-  clientSecretName: auth-hp48c
   repo: https://github.com/NicoOosterwijk/node-red-k8s.git
   targets:
     - clusterGroup: node-red
