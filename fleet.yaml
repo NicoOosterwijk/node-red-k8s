@@ -9,3 +9,14 @@ NamespaceAnnotations:
 
 kustomize:
   dir: ""
+  
+targetCustomizations:
+- name: speeltuin
+  clusterName: speeltuin
+  kustomize:
+    dir: overlays/speeltuin
+
+- name: production
+  clusterName: production
+  kustomize:
+    dir: overlays/production
